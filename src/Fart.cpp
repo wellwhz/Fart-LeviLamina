@@ -1,33 +1,33 @@
-#include "mod/MyMod.h"
+#include "Fart.h"
 
 #include <memory>
 
 #include "ll/api/mod/RegisterHelper.h"
 
-namespace my_mod {
+namespace fart {
 
-static std::unique_ptr<MyMod> instance;
+static std::unique_ptr<Fart> instance;
 
-MyMod& MyMod::getInstance() { return *instance; }
+Fart& Fart::getInstance() { return *instance; }
 
-bool MyMod::load() {
+bool Fart::load() {
     getSelf().getLogger().debug("Loading...");
     // Code for loading the mod goes here.
     return true;
 }
 
-bool MyMod::enable() {
+bool Fart::enable() {
     getSelf().getLogger().debug("Enabling...");
     // Code for enabling the mod goes here.
     return true;
 }
 
-bool MyMod::disable() {
+bool Fart::disable() {
     getSelf().getLogger().debug("Disabling...");
     // Code for disabling the mod goes here.
     return true;
 }
 
-} // namespace my_mod
+} // namespace fart
 
-LL_REGISTER_MOD(my_mod::MyMod, my_mod::instance);
+LL_REGISTER_MOD(fart::Fart, fart::instance);

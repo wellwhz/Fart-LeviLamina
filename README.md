@@ -1,35 +1,14 @@
-# LeviLamina Mod Template
+# Fart-LeviLamina
 
-A LeviLamina mod template
-
-This mod is a template for developing LeviLamina mods.
-
-## Install
-
-Generate a new repository from this template.
+A fart plugin for LeviLamina
 
 ## Usage
 
-Before using this mod template, make sure that you have installed XMake and a Minecraft Bedrock Server with LeviLamina.
+1. Download `Fart.dll` from release or action file.
+1. Move the `Fart.dll` to `plugins/`
 
-1. Clone the new repository into a local folder.
-
-1. Change the mod name and the expected LeviLamina version in `xmake.lua`.
-
-1. Add your code.
-
-1. Run `xmake repo -u` in the root of the repository.
-
-1. Run `xmake` to build the mod.
-
-Now the build is complete at `bin/`.
-
-## Contributing
-
-Ask questions by creating an issue.
-
-PRs accepted.
+Now the start the LeviLamina server.
 
 ## License
 
-CC0-1.0 © LiteLDev
+AGPL 3.0 © wellwhz
