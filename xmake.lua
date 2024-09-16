@@ -2,7 +2,7 @@ add_rules("mode.debug", "mode.release")
 
 add_repositories("liteldev-repo https://github.com/wellwhz/xmake-repo.git")
 
-add_requires("levilamina")
+add_requires("levilamina","legacyparticleapi")
 
 if not has_config("vs_runtime") then
     set_runtimes("MD")
@@ -24,7 +24,7 @@ target("Fart")
     add_files("src/**.cpp")
     add_includedirs("src")
     add_includedirs("include")
-    add_packages("levilamina")
+    add_packages("levilamina","legacyparticleapi")
     add_shflags("/DELAYLOAD:bedrock_server.dll")
     set_exceptions("none")
     set_kind("shared")
